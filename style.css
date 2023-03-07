@@ -1,0 +1,52 @@
+*{
+    text-align: center;
+    margin-top: 6%;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.result{
+    display: inline;
+    background-color: red;
+    border: solid;
+    font-size: 50px;
+}
+
+.fundo{
+    background: rgb(230, 163, 163);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    height: auto;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.288);
+    
+}
+.form{
+    font-size: 30px;
+}
+
+#hora {
+    width: 25px;
+}
+
+#minute {
+    width: 25px;
+}
+
+#texto {
+    font-size: 15px;
+    display: inline
+}
+
+#mostrar-resultado{
+    font-size: 30px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

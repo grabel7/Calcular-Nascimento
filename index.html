@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade Calc.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="fundo">
+    <div class="form">
+        <label for="birthday">Nascimento:</label>
+        <input type="date" class="form" max=hoje name="birthday" id="birthday">
+        <button class="form" onclick="enviar()">Data</button>
+        <br>
+        <p id="texto">hora/minuto</p>
+        <input type="number" name="hora" id="hora"> :
+        <input type="number" name="minute" id="minute"> 
+    </div>
+
+    <div id="res">
+        <p class="result" id="dia">xx</p> -
+        <p class="result" id="mes">xx</p> -
+        <p class="result" id="ano">xx</p>
+        <div class="hora">
+        <p class="result" id='horares'>00</p> :
+        <p class="result" id="minres">00</p>
+        <p id="mostrar-resultado"></p>
+    </div>
+    </div>
+</section>
+</body>
+<script src="script.js"></script>
+</html>
