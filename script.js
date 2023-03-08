@@ -56,6 +56,6 @@ function enviar() {
     ano.innerHTML = difyyyy
     horares.innerHTML = difhh
     minres.innerHTML = difmin
-    document.getElementById('mostrar-resultado').innerHTML = `Você nasceu há ${difhh} horas ${difmin} minutos de ${difyyyy} anos atrás e ${difmm} meses e ${difdd} dias`
+    document.getElementById('mostrar-resultado').innerHTML = `Você nasceu há ${difhh} horas ${difmin} minutos de ${difyyyy} anos, ${difmm} meses e ${difdd} dias atrás`
 }
 }
