@@ -10,12 +10,11 @@ var minutos = today.getMinutes()
 document.getElementById('birthday')
 function enviar() {
     let form = document.getElementById('birthday').value
-    let cortado = form.split('-')
+    let cortado = form.split('-').join('T').split('T')
+    let separators = ["T", ':'];
+    let cortadohoras = form.split(new RegExp('(['+ separators.join('') + '])'));
 
-    let hh = document.getElementById('hora')
-    let min = document.getElementById('minute')
-
-        if (hoje < form || Number(hh.value) >= 24 || Number(hh.value) < 0 || Number(min.value) >=60 || Number(min.value) < 0) {
+        if (hoje < form || Number(cortadohoras[2].value) >= 24 || Number(cortadohoras[2].value) < 0 || Number(cortadohoras[4].value) >=60 || Number(cortadohoras[4].value) < 0) {
             window.alert('[ERRO] Dados Inválidos')
         } else {
 
@@ -38,8 +37,8 @@ function enviar() {
         difyyyy--
         difmm += 12
     }
-    let difhh = Number(hora) - Number(hh.value)
-    let difmin = Number(minutos) - Number(min.value)
+    let difhh = Number(hora) - Number(cortadohoras[2])
+    let difmin = Number(minutos) - Number(cortadohoras[4])
     
     if (difmin < 0){
         difhh++
